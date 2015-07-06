@@ -1,0 +1,363 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: url(http://www.samkapila.com/parts/images/texture.svg), #eee9cc;
+  color: #21221A;
+  font-family: "news-gothic-std",sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  line-height: 1.5; }
+  body:before {
+    background: url(http://upload.wikimedia.org/wikipedia/commons/c/ce/Marcel_Duchamp.jpg);
+    width: 300px;
+    height: 230px;
+    opacity: .3;
+    content: "";
+    position: absolute;
+    background-size: 200px;
+    right: 0px;
+    transform: rotate(5deg); }
+
+p {
+  max-width: 600px;
+  margin-bottom: 30px;
+  display: block;
+  font-size: 20px; }
+  p:nth-of-type(odd) {
+    font-weight: bold;
+    padding-left: 30px; }
+
+a {
+  color: red;
+  opacity: .7;
+  text-decoration: none;
+  border-bottom: 5px solid red; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #416e8f;
+  font-weight: bold;
+  font-family: "adelle-condensed",sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  -webkit-mask-image: url(http://www.samkapila.com/texture.png); }
+
+h1 {
+  font-size: 50px;
+  position: relative;
+  z-index: 4;
+  color: #21221a;
+  padding-left: 60px;
+  padding-bottom: 5px;
+  padding-top: 30px; }
+
+h2 {
+  font-size: 26px;
+  position: relative;
+  z-index: 4;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  opacity: .9;
+  color: #21221A;
+  text-transform: uppercase; }
+  h2:before {
+    content: "DADA";
+    color: red;
+    opacity: .5;
+    font-size: 35px;
+    position: absolute;
+    z-index: 3;
+    top: -5px; }
+  h2:after {
+    content: "DADA DADA";
+    color: red;
+    opacity: .5;
+    font-size: 30px;
+    position: absolute;
+    z-index: 3;
+    top: -15px; }
+
+h3 {
+  font-size: 30px; }
+
+.page-wrapper {
+  width: 90%;
+  margin: 20px auto; }
+
+.intro {
+  position: relative; }
+  .intro:before {
+    content: "";
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    background: url(img/wheel.png) no-repeat;
+    background-size: 25%;
+    animation: spin 3s infinite;
+    -webkit-transition: spin 4s infinite;
+    transform-origin: 25px 25px; }
+  .intro:after {
+    content: "";
+    width: 200px;
+    height: 500px;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: -18px;
+    background: url(img/base.png) no-repeat;
+    background-size: 45%; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(359deg); } }
+.summary {
+  padding: 30px 0;
+  max-width: 600px;
+  position: relative;
+  font-weight: 700; }
+  .summary p {
+    max-width: 500px; }
+  .summary:before {
+    content: "{";
+    color: red;
+    opacity: .4;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: -2px;
+    left: -20px;
+    font-family: "adelle-condensed",sans-serif; }
+  .summary:after {
+    content: "}";
+    color: red;
+    opacity: .4;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 7px;
+    right: 0;
+    font-family: "adelle-condensed",sans-serif; }
+
+.preamble {
+  padding: 30px 0;
+  padding-left: 7%;
+  position: relative;
+  z-index: 4; }
+  .preamble:before {
+    content: "The Road to Enlightenment";
+    color: red;
+    opacity: .4;
+    font-size: 40px;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    font-family: "adelle-condensed",sans-serif; }
+
+.main {
+  padding: 0 7%;
+  padding-top: 100px;
+  position: relative; }
+  .main h3:before {
+    content: "about?";
+    color: red;
+    opacity: .4;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    height: 300px;
+    right: 0;
+    transform: rotate(-45deg);
+    font-family: "adelle-condensed",sans-serif; }
+  .main:before {
+    background: url(http://uploads6.wikiart.org/images/marcel-duchamp/l-h-o-o-q-mona-lisa-with-moustache-1919.jpg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: 50%;
+    content: "";
+    position: absolute;
+    left: -6%;
+    top: -60px;
+    z-index: -1;
+    font-family: "adelle-condensed",sans-serif;
+    color: red;
+    opacity: .6; }
+  .main:after {
+    content: "about?";
+    color: red;
+    opacity: .4;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 80px;
+    right: 0;
+    transform: rotate(-45deg);
+    font-family: "adelle-condensed",sans-serif; }
+
+.participation {
+  padding: 0 20%;
+  padding-top: 100px;
+  position: relative; }
+  .participation:before {
+    background: url(https://img1.etsystatic.com/000/0/5210765/il_570xN.178040283.jpg) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: 70%;
+    content: "";
+    position: absolute;
+    right: -20%;
+    top: 30px; }
+  .participation:after {
+    content: "participation";
+    color: red;
+    opacity: .4;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    right: 0;
+    font-family: "adelle-condensed",sans-serif; }
+
+.benefits {
+  top: 100px;
+  background: url(http://www.samkapila.com/parts/images/texture.svg), #416e8f;
+  padding: 30px;
+  padding-bottom: 60px;
+  color: white;
+  position: relative;
+  right: 0; }
+  .benefits h3 {
+    color: white;
+    z-index: 4; }
+  .benefits:before {
+    content: "benefits";
+    color: red;
+    opacity: .3;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    right: -30px;
+    font-family: "adelle-condensed",sans-serif; }
+  .benefits:after {
+    content: "benefits";
+    color: red;
+    opacity: .3;
+    font-size: 70px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: -30px;
+    font-family: "adelle-condensed",sans-serif; }
+
+.requirements {
+  padding-top: 200px;
+  position: relative; }
+  .requirements:before {
+    background: url(https://upload.wikimedia.org/wikipedia/en/4/49/MechanicalHead-Hausmann.jpg) no-repeat;
+    width: 500px;
+    height: 800px;
+    background-size: 100%;
+    content: "";
+    position: absolute;
+    z-index: 5;
+    right: -200px;
+    transform: rotate(10deg);
+    opacity: .3; }
+
+footer {
+  font-family: "adelle-condensed",sans-serif;
+  position: relative;
+  z-index: 5; }
+  footer:before {
+    background: url(http://ny-photography-diary.com/wp-content/uploads/2015/07/MR.jpg) no-repeat;
+    width: 500px;
+    height: 400px;
+    background-size: 100%;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -12%;
+    transform: rotate(10deg);
+    opacity: .7; }
+  footer a {
+    color: black;
+    font-size: 40px;
+    margin-right: 40px;
+    display: block;
+    z-index: 6;
+    float: left; }
+    footer a:nth-of-type(odd) {
+      margin-top: 20px;
+      font-size: 50px; }
+
+aside {
+  clear: both;
+  position: relative;
+  top: 300px; }
+
+.design-selection, .design-archives, .zen-resources {
+  float: left;
+  width: 31.333%;
+  margin-right: 3%; }
+  .design-selection li, .design-archives li, .zen-resources li {
+    margin-bottom: 20px; }
+
+.zen-resources {
+  margin-right: 0; }
+
+/*# sourceMappingURL=style.css.map */
